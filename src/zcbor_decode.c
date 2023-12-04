@@ -14,7 +14,7 @@
 
 /** Return value length from additional value.
  */
-static size_t additional_len(uint8_t additional)
+static uint32_t additional_len(uint8_t additional)
 {
 	if (ZCBOR_VALUE_IS_1_BYTE <= additional && additional <= ZCBOR_VALUE_IS_8_BYTES) {
 		/* 24 => 1
